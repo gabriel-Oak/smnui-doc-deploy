@@ -8,7 +8,6 @@ var app = express();
 const config = require('./config/config');
 
 const db = require('./config/database');
-//db('mongodb://127.0.0.1:27017/cardapio-db');
 db(config.connectionString);
 
 app.use(logger('dev'));
