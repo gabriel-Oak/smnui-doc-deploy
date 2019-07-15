@@ -19,19 +19,4 @@ app.use(express.static(filesPath));
 app.use(cors());
 app.set('views', filesPath);
 
-const usuario = require('./routes/usuario.route');
-app.use('/usuario', usuario);
-
-const cardapio = require('./routes/cardapio.route');
-app.use('/cardapio', cardapio);
-
-const troca = require('./routes/troca.route');
-app.use('/troca', troca);
-
-const feedback = require('./routes/feedback.route');
-app.use('/feedback', feedback);
-
-const notification = require('./routes/notification.route');
-app.use('/notification', notification);
-
 module.exports = app;
